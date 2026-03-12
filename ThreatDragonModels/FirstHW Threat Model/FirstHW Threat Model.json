@@ -487,8 +487,8 @@
           },
           {
             "position": {
-              "x": 370,
-              "y": 400
+              "x": 350,
+              "y": 270
             },
             "size": {
               "width": 60,
@@ -607,8 +607,8 @@
           },
           {
             "position": {
-              "x": 370,
-              "y": 257
+              "x": 360,
+              "y": 380
             },
             "size": {
               "width": 60,
@@ -1264,6 +1264,288 @@
                 "y": 450
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS реквесты и респонсы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS реквесты и респонсы"
+            ],
+            "id": "c3cffbb9-a9e4-4859-b0a1-d877f5380681",
+            "source": {
+              "cell": "df19902a-05e3-42d0-84c4-ea07a3fd380e",
+              "port": "3ca5ca2e-0523-4fce-9423-7edde2df8fb1"
+            },
+            "target": {
+              "cell": "9c5a320d-059b-4d05-a8f3-056eb71a1891",
+              "port": "6a128169-eb29-456d-86c0-f90fb31304dd"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "физическое взаимодействие",
+              "description": "прикладывание карты, ввод данных, выдача/забор карты",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "физическое взаимодействие"
+            ],
+            "id": "e72fa9e2-1ff8-40e0-8e4a-28aa4e137b44",
+            "source": {
+              "x": 130,
+              "y": 470
+            },
+            "target": {
+              "cell": "08870514-4443-47e4-b434-fc1f7e9fe846",
+              "port": "1c95e2a8-478a-46bd-ad9f-4958b4679160"
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API реквесты и респонсы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "API реквесты и респонсы"
+            ],
+            "id": "3bc07d1d-623b-4b3e-9ad4-ec804f75cc0f",
+            "source": {
+              "x": 420,
+              "y": 410
+            },
+            "target": {
+              "cell": "c511f95f-c77c-45eb-9ce3-0d2c80232dae",
+              "port": "1c95e2a8-478a-46bd-ad9f-4958b4679160"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "реквест проверки, списание и респонс",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "реквест проверки, списание и респонс"
+            ],
+            "id": "9ce6059c-d6b9-4ae1-a482-9d9c5a42b056",
+            "source": {
+              "x": 620,
+              "y": 410
+            },
+            "target": {
+              "cell": "c511f95f-c77c-45eb-9ce3-0d2c80232dae",
+              "port": "f935d982-e583-40b9-af8a-8f27a2c7602c"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "внутренние API вызовы",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "внутренние API вызовы"
+            ],
+            "id": "1d6e1f8a-651e-404b-8f02-5d1cf993a340",
+            "source": {
+              "x": 420,
+              "y": 300
+            },
+            "target": {
+              "cell": "c511f95f-c77c-45eb-9ce3-0d2c80232dae",
+              "port": "1c95e2a8-478a-46bd-ad9f-4958b4679160"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "реквест платежа и респонс",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "реквест платежа и респонс"
+            ],
+            "id": "2bcfa847-4434-4546-ad20-27c3fde4d878",
+            "source": {
+              "x": 130,
+              "y": 230
+            },
+            "target": {
+              "cell": "c511f95f-c77c-45eb-9ce3-0d2c80232dae",
+              "port": "6a128169-eb29-456d-86c0-f90fb31304dd"
+            }
           },
           {
             "position": {

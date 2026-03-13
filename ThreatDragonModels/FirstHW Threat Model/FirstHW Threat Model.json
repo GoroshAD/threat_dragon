@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "69e49cbd-7d24-437e-89e6-a7546ecb3efd",
             "zIndex": -1,
+            "id": "69e49cbd-7d24-437e-89e6-a7546ecb3efd",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "граница доверия",
@@ -76,8 +76,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "23f78447-bbc7-4db6-97e8-b510e573dae2",
             "zIndex": -1,
+            "id": "23f78447-bbc7-4db6-97e8-b510e573dae2",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "граница доверия",
@@ -215,8 +215,8 @@
           },
           {
             "position": {
-              "x": 20,
-              "y": 90
+              "x": 10,
+              "y": 32
             },
             "size": {
               "width": 112.5,
@@ -333,7 +333,7 @@
           {
             "position": {
               "x": 10,
-              "y": 302
+              "y": 312
             },
             "size": {
               "width": 112.5,
@@ -450,7 +450,7 @@
           {
             "position": {
               "x": 10,
-              "y": 210
+              "y": 130
             },
             "size": {
               "width": 112.5,
@@ -1536,40 +1536,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "граница доверия",
-              "description": "интернет и клиенты, недоверенная",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "граница доверия"
-            ],
-            "id": "c9ad760c-176b-43b0-9c0d-ffc08bb8ec5f",
-            "source": {
-              "x": 160,
-              "y": 70
-            },
-            "target": {
-              "x": 170,
-              "y": 550
-            },
-            "vertices": [
-              {
-                "x": 160,
-                "y": 400
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -2001,6 +1967,136 @@
               "cell": "c511f95f-c77c-45eb-9ce3-0d2c80232dae",
               "port": "6a128169-eb29-456d-86c0-f90fb31304dd"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "отправка смс с кодами подтверждения",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "отправка смс с кодами подтверждения"
+            ],
+            "id": "d7b7e02d-3e28-452a-91b0-2788d0901f93",
+            "source": {
+              "cell": "1d47ea8f-9c7a-47ab-8d02-aff2b7438096",
+              "port": "3ca5ca2e-0523-4fce-9423-7edde2df8fb1"
+            },
+            "target": {
+              "cell": "4766bbf8-79fa-42db-ae57-154f6a4d6ed6",
+              "port": "f11f9efa-a7da-4597-b790-102b7d8f48bb"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "оплата",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "оплата"
+            ],
+            "id": "60d37738-d6aa-4168-be91-7ae703eda23a",
+            "source": {
+              "cell": "a67e065a-f09d-485c-9bdc-32635b04f482",
+              "port": "3ca5ca2e-0523-4fce-9423-7edde2df8fb1"
+            },
+            "target": {
+              "cell": "4766bbf8-79fa-42db-ae57-154f6a4d6ed6",
+              "port": "f11f9efa-a7da-4597-b790-102b7d8f48bb"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "граница доверия",
+              "description": "интернет и клиенты, недоверенная",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "граница доверия"
+            ],
+            "id": "c9ad760c-176b-43b0-9c0d-ffc08bb8ec5f",
+            "source": {
+              "x": 160,
+              "y": 70
+            },
+            "target": {
+              "x": 170,
+              "y": 550
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 10
+              },
+              {
+                "x": 160,
+                "y": 400
+              }
+            ]
           },
           {
             "position": {

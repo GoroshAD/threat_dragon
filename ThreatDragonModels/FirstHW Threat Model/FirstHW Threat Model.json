@@ -2245,7 +2245,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Логовая бд",
-              "description": "данные аудита и логи",
+              "description": "данные аудита и логи (списания и пополнения в отдельной бд)",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2256,6 +2256,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {

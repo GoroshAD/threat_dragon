@@ -2121,7 +2121,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Транзакционная бд",
-              "description": "данные о пополнениях, списаниях, акциях и тп",
+              "description": "данные о пополнениях и списаниях",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2132,6 +2132,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2256,13 +2263,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
